@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  background-color: #fbfbfb;
+}
+
+.header-page {
+  background-color: #222f3e;
+  color: #fff;
+  font-family: "Pacifico", cursive;
+  padding-left: 70px;
+}
+
+.header-page span {
+  color: #1dd1a1;
+  padding-left: 5px;
+}
+
+.nav-menu {
+  text-align: center;
+}
+
+.nav-menu a {
+  color: #ccc;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.nav-menu a:hover {
+  color: #222f3e;
+  font-weight: 700;
+}
+
+.nav-menu li {
+  padding: 20px;
+}
+
+.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-image h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 35px;
+}
+.header-image p {
+  text-align: center;
+  margin: 20px 170px;
+  font-weight: 300;
+}
+
+.journey-travel {
+  width: 90%;
+  margin: auto;
+  padding: 70px;
+  padding-bottom: 40px;
+}
+
+.journey-travel h2 {
+  color: #222f3e;
+  font-weight: 300;
+  font-size: 35px;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.journey-travel span {
+  color: #1dd1a1;
+}
+
+#journey-text {
+  color: #222f3e;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 80px;
+}
+
+.travel {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.travel-ways:nth-child(2) {
+  margin-top: 30px;
+}
+.travel-ways {
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+}
+
+.travel-ways h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #222f3e;
+  margin-top: 20px;
+}
+
+.travel-ways p {
+  color: #222f3e;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.images-cities {
+  background-color: #1dd1a1;
+  padding-top: 10px;
+  color: #222f3e;
+}
+.cities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.city {
+  width: 29%;
+  margin-bottom: 25px;
+  background-color: #fbfbfb;
+}
+
+.city img {
+  width: 100%;
+}
+
+.city h3 {
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.city p {
+  padding: 0 15px 10px 10px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #222f3e;
+}
+footer p {
+  color: #fbfbfb;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 680px) {
+  .header-image h2 {
+    font-size: 30px;
+  }
+  .header-image p {
+    margin: 20px 70px;
+  }
+
+  .journey-travel h2 {
+    font-size: 30px;
+  }
+  .journey-travel {
+    padding: 50px;
+  }
+  #journey-text {
+    padding: 0;
+  }
+  .travel-ways {
+    width: 100%;
+    flex-direction: row;
+  }
+  .travel {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .travel-ways:nth-child(2) {
+    margin-top: 0;
+  }
+  .travel-ways p {
+    padding-top: 10px;
+  }
+  .travel-ways h3 {
+    padding-top: 0;
+  }
+  .city {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .travel-ways {
+    width: 100%;
+    flex-direction: column;
+  }
+  .travel-ways img {
+    height: 30%;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .city {
+    width: 90%;
+  }
+}
